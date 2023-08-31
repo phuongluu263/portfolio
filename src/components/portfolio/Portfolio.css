@@ -1,0 +1,99 @@
+#portfolio > h2, #portfolio > h5 
+{
+    position: relative;
+}
+
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.portfolio__item {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    z-index: 1;
+}
+
+.portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.portfolio__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio__item h3 {
+    margin: 1.2rem 0 2rem;
+}
+
+.portfolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*======================MEDIUM===================*/
+
+@media screen and (max-width: 1024px) {
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/*======================SMALL===================*/
+
+@media screen and (max-width: 600px) {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+
+
+/*================= LIGHT ===================*/
+
+#portfolio .light > h2, #portfolio .light > h5 
+{
+    color: #000;
+}
+
+.light .portfolio__item {
+    background: linear-gradient(
+        45deg,
+        #000,
+        rgb(34, 33, 33),
+        rgb(107, 102, 102)
+    );
+}
+
+.light .btn {
+    background: #000;
+    border-color: #fff;
+    color: #fff;
+}
+
+.light .btn:hover {
+    background: rgb(150, 150, 150);
+    border-color: #000;
+    color: #000;
+}
+
+.light .btn-primary {
+    border-color: #000;
+    background: #fff;
+    color: #000;
+}
+
+.light .btn-primary:hover {
+    border-color: #fff;
+    background: rgb(150, 150, 150);
+    color: #fff;
+}

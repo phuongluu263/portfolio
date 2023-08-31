@@ -1,0 +1,77 @@
+#testimonials > h2, #testimonials > h5 {
+    position: relative;
+}
+
+.container.testimonials__container {
+    width: 40%;
+    padding-bottom: 4rem;
+}
+
+.client__avatar {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-variant);
+}
+
+.testimonials {
+    background: var(--color-bg-variant);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
+.client__priview {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0; 
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-primary);
+}
+
+/*======================MEDIUM===================*/
+
+@media screen and (max-width: 1024px) {
+    .container.testimonials__container {
+        width: 60%;
+    }
+}
+
+/*======================SMALL===================*/
+
+@media screen and (max-width: 600px) {
+    .container.testimonials__container {
+        width: var(--container-width-sm);
+    }
+
+    .client__priview {
+        width: var(--container-width-sm);
+    }
+}
+
+
+/*================= LIGHT ====================*/
+
+.light .testimonials {
+    background: #000;
+    opacity: 0.9;
+}
+
+.light .client__avatar {
+    border-color: #fff;
+}
+
+.light .client__name {
+    color: #fff;
+}
+
+.light .swiper-pagination-clickable .swiper-pagination-bullet {
+    background: #000;
+}
