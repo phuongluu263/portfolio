@@ -6,4 +6,4 @@ Setup:
 
 - run `npm install && npm start`
 
-Link: https://trongnhan-portfolio.netlify.app/
+Link: https://portfolio-sigma-cyan-28.vercel.app/
